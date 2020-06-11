@@ -16,7 +16,7 @@ namespace TestThread
             {
                 "A","B","C","D","E"
             };
-
+            
             foreach(string item in arrKey )
             {
                 Timer timer = new Timer(TimeCB ,null, -1,3000);
@@ -26,7 +26,7 @@ namespace TestThread
             bool outloop = true;
             while(outloop){
                 Console.WriteLine("請輸入A-E");
-                string key = Console.ReadLine();
+                string key = Console.ReadLine().ToUpper();
                 Timer getTimer = null;
                 if ( arrKey.Contains(key))
                 {
